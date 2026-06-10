@@ -139,7 +139,7 @@
         </div>
     </div>
 </header>
-<section class="flex justify-around max-sm:hiiden max-md:hidden py-2 gap-12">
+<section class="flex justify-around max-sm:hiiden max-md:hidden py-6 gap-12">
     <div class="flex items-center gap-8 font-semibold">
         <img src="favicon.ico" alt="" class="h-16 ">
         <div class="flex gap-4">
@@ -265,22 +265,52 @@
      </div>
 </section>
 </section>
-<section class="bg-[#f6f6f6]">
-     <h1 class="font-extrabold text-3xl pl-32 pt-24">Find the Best Fit for Your Goals</h1>
-     <div class="flex flex-col pl-32 pt-6 bg-white ">
-          <img src="one.jpeg" alt="" class="h-32 w-80">
-          <h1>University Programs</h1>
-          <p>Find bachelor’s, master’s, programs at top universities around the world. Discover your ideal study destination and start building your global career</p>
-          <img src="icons8-horizontal-line-40.png" alt="">
-          <button>Learn More <img src="icons8-right-24.png" alt=""></button>
-     </div>
-     <div><img src="two.png" alt="">
-          <h1></h1>
-          <p></p></div>
-     <div><img src="three.jpeg" alt="">
-          <h1></h1>
-          <p></p></div>
+<section class="bg-[#f6f6f6] px-6 py-16 md:px-16 lg:px-32">
+     <h1 class="font-extrabold text-3xl mb-12">Find the Best Fit for Your Goals</h1>
+     <div class="flex flex-col md:flex-row gap-8 items-stretch justify-center">     
+          <div class="flex flex-col p-6 rounded-lg shadow-xl bg-white flex-1 justify-between">
+               <div>
+                    <img src="one.jpeg" alt="" class="h-32 w-full object-cover rounded-lg">
+                    <h1 class="font-semibold pt-4 text-2xl">University Programs</h1>
+                    <p class="pt-4 text-gray-600">Find bachelor’s, master’s, programs at top universities around the world. Discover your ideal study destination and start building your global career.</p>
+               </div>
+               <div>
+                    <img src="icons8-horizontal-line-40.png" alt="" class="h-3 w-full mt-6 opacity-30">
+                    <button class="flex justify-center items-center gap-2 py-2 rounded-md mt-6 bg-[#e8eeff] w-32 font-medium text-sm hover:bg-[#d0deff] transition-colors">
+                         Learn More <img src="icons8-right-24.png" alt="" class="w-4 h-4">
+                    </button>
+               </div>
+          </div>
+          <div class="flex flex-col p-6 rounded-lg shadow-xl bg-white flex-1 justify-between">
+               <div>
+                    <img src="two.png" alt="" class="h-32 w-full object-cover rounded-lg">
+                    <h1 class="font-semibold pt-4 text-2xl">Language Schools</h1>
+                    <p class="pt-4 text-gray-600">Improve your language skills through accredited schools offering English, Spanish, German, French, and Italian courses from beginner to advanced levels. Experience cultural immersion while learning from native speaking instructors.</p>
+               </div>
+               <div>
+                    <img src="icons8-horizontal-line-40.png" alt="" class="h-3 w-full mt-6 opacity-30">
+                    <button class="flex justify-center items-center gap-2 py-2 rounded-md mt-6 bg-[#e8eeff] w-32 font-medium text-sm hover:bg-[#d0deff] transition-colors">
+                         Learn More <img src="icons8-right-24.png" alt="" class="w-4 h-4">
+                    </button>
+               </div>
+          </div>
+          <div class="flex flex-col p-6 rounded-lg shadow-xl bg-white flex-1 justify-between">
+               <div>
+                    <img src="three.jpeg" alt="" class="h-32 w-full object-cover rounded-lg">
+                    <h1 class="font-semibold pt-4 text-2xl">Summer / Winter Schools</h1>
+                    <p class="pt-4 text-gray-600">Join short-term study programs that combine learning and travel. Gain new experiences, earn credits, and explore global cultures during your break.</p>
+               </div>
+               <div>
+                    <img src="icons8-horizontal-line-40.png" alt="" class="h-3 w-full mt-6 opacity-30">
+                    <button class="flex justify-center items-center gap-2 py-2 rounded-md mt-6 bg-[#e8eeff] w-32 font-medium text-sm hover:bg-[#d0deff] transition-colors">
+                         Learn More <img src="icons8-right-24.png" alt="" class="w-4 h-4">
+                    </button>
+               </div>
+          </div>
+
+     </div>   
 </section>
+
 <script>
     const getElement = (...ids) =>{
         return ids.reduce((obj,id) =>{

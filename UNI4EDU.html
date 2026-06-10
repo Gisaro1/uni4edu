@@ -17,7 +17,61 @@
                 <img src="icons8-search-30.png" alt="" class="h-4">
                 <img src="gb.svg" alt="" class="h-4 w-4"> 
                 <h5>EN</h5>
-                <img src="icons8-chevron-down-30.png" alt="" class="h-3">
+               <button id="btn1"><img src="icons8-chevron-down-30.png" alt="" class="h-3"></button> 
+                <div id="countries" class="flex flex-col items-start bg-white absolute top-12 right-12 pt-6 px-4 rounded-md shadow-xl hidden h-[152px] overflow-auto">
+                    <div class="flex justify-center items-center gap-3">
+                        <img src="ae.svg" alt="" class="h-3">
+                        <h5>Arabic Emirate</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                        <img src="ca.svg" alt="" class="h-3">
+                        <h5>Canada</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="de.svg" alt="" class="h-3">
+                         <h5>Denmark</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="es.svg" alt="" class="h-3">
+                         <h5>Spain</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="fr.svg" alt="" class="h-3">
+                         <h5>France</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="gr.svg" alt="" class="h-3">
+                         <h5>Greenland</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="hu.svg" alt="" class="h-3">
+                         <h5>Hungary</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="it.svg" alt="" class="h-3">
+                         <h5>Italy</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="ksv.png" alt="" class="h-3">
+                         <h5>Cyprus</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="lv.svg" alt="" class="h-3">
+                         <h5>Chile</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="mk.svg" alt="" class="h-3">
+                         <h5>Mongoria</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="mt.svg" alt="" class="h-3">
+                         <h5>Indonesia</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="nz.svg" alt="" class="h-3">
+                         <h5>Australia</h5>
+                    </div>
+                </div>
                 <img src="icons8-menu-bar-50.png" alt="" class="h-6">
             </div>
         </div>
@@ -28,9 +82,79 @@
             <h5>partnership</h5>
             
             <h5 class="flex gap-2 justify-center items-center"><img src="gb.svg" alt="" class="h-4 w-4"> EN</h5>
-            <img src="icons8-chevron-down-30.png" alt="" class="h-3">
+            <button id="btn2"><img src="icons8-chevron-down-30.png" alt="" class="h-3"></button>
+             <div id="countrieslg" class="flex flex-col items-start bg-white absolute top-12 right-12 pt-6 px-4 rounded-md shadow-xl hidden h-[152px] overflow-auto">
+                    <div class="flex justify-center items-center gap-3">
+                        <img src="ae.svg" alt="" class="h-3">
+                        <h5>Arabic Emirate</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                        <img src="ca.svg" alt="" class="h-3">
+                        <h5>Canada</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="de.svg" alt="" class="h-3">
+                         <h5>Denmark</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="es.svg" alt="" class="h-3">
+                         <h5>Spain</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="fr.svg" alt="" class="h-3">
+                         <h5>France</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="gr.svg" alt="" class="h-3">
+                         <h5>Greenland</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="hu.svg" alt="" class="h-3">
+                         <h5>Hungary</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="it.svg" alt="" class="h-3">
+                         <h5>Italy</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="ksv.png" alt="" class="h-3">
+                         <h5>Cyprus</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="lv.svg" alt="" class="h-3">
+                         <h5>Chile</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="mk.svg" alt="" class="h-3">
+                         <h5>Mongoria</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="mt.svg" alt="" class="h-3">
+                         <h5>Indonesia</h5>
+                    </div>
+                    <div class="flex justify-center items-center gap-3">
+                         <img src="nz.svg" alt="" class="h-3">
+                         <h5>Australia</h5>
+                    </div>
+                </div>
         </div>
     </div>
 </header>
+<script>
+    const getElement = (...ids) =>{
+        return ids.reduce((obj,id) =>{
+            obj[id] = document.getElementById(id);
+            return obj
+        },{})
+    }
+     const{btn1,countries,btn2,countrieslg} = getElement('btn1','countries','btn2','countrieslg')
+     btn1.addEventListener('click', ()=>{
+        countries.classList.toggle('hidden')
+     })
+      btn2.addEventListener('click', ()=>{
+        countrieslg.classList.toggle('hidden')
+     })
+
+</script>
 </body>
 </html>
